@@ -1,1 +1,1 @@
-# easyjur
+# easyjurCarousel
