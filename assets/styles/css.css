@@ -1,0 +1,82 @@
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255);
+    z-index: 1000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-carousel-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.book-carousel {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.book-carousel__wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-carousel__item {
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.book-carousel__image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.book-carousel__title {
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.book-carousel__control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.book-carousel__control--prev {
+    left: 10px;
+}
+
+.book-carousel__control--next {
+    right: 10px;
+}
