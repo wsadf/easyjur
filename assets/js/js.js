@@ -36,7 +36,7 @@ $(document).ready(function () {
 
     function updateCarouselPosition() {
         const maxPosition = -($carouselWrapper.children().length * itemWidth - $('.carousel').width());
-        currentPosition = Math.max(currentPosition, maxPosition);  // Evita deslizar além do último item
+        currentPosition = Math.max(currentPosition, maxPosition);
         $carouselWrapper.css('transform', `translateX(${currentPosition}px)`);
     }
 
